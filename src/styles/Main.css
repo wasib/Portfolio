@@ -1,0 +1,42 @@
+
+.main-container {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fade-enter {
+  transform: translate3d(0px, 75%, -250px) !important;
+  z-index: 8;
+  opacity: 0.9;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  z-index: 8;
+  transform: translate3d(0px, 0px, 0px) !important;
+  -webkit-transition: -webkit-transform 0.45s, opacity 0.45s;
+  transition: transform 0.45s, opacity 0.45s !important;
+  -webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1) !important;
+}
+
+.fade-exit {
+  position: absolute !important;
+  top: 0px;
+  left: 0;
+  opacity: 1;
+  z-index: 10;
+}
+
+.fade-exit.fade-exit-active {
+    z-index: 10;
+  opacity: 0.9;
+  transform: translate3d(0px, 100%, 0px);
+  -webkit-transition: -webkit-transform 0.45s, opacity 0.45s !important;
+  transition: transform 0.45s, opacity 0.45s !important;
+  -webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1) !important;
+}
