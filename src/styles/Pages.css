@@ -1,0 +1,91 @@
+/* Pages stack */
+
+.pages-stack {
+	z-index: 100;
+	pointer-events: none;
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+	-webkit-perspective-origin: 50% -50%;
+	perspective-origin: 50% -50%;
+}
+
+ .page {
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	pointer-events: auto;
+	background: #2a2b30;
+	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+ .pages-stack--open .page {
+	cursor: pointer;
+	-webkit-transition: -webkit-transform 0.45s, opacity 0.45s;
+	transition: transform 0.45s, opacity 0.45s;
+	-webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+	transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+ .pages-stack .page {
+	cursor: pointer;
+	-webkit-transition: -webkit-transform 0.45s, opacity 0.45s;
+	transition: transform 0.45s, opacity 0.45s;
+	-webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+	transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+ .page-inactive {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	opacity: 0;
+}
+.page-inactive2 {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	opacity: 0;
+}
+
+
+.page--open{
+    z-index: 9;
+    opacity: 1;
+    transform: translate3d(0px, 75%, -200px);
+}
+
+.page--close{
+    z-index: 9;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.page-inactive--open{
+    transform: translate3d(0px, 75%, -250px);
+    z-index: 8;
+    opacity: 0.9;
+}
+
+.page-inactive--close{
+    transform: translate3d(0px, 100%, 0px);
+    z-index: 8;
+    opacity: 0.9;
+}
+
+.page-inactive2--open{
+    transform: translate3d(0px, 75%, -300px);
+    z-index: 7;
+    opacity: 0.8;
+}
+
+.page-inactive2--close{
+    transform: translate3d(0px, 100%, 0px);
+    z-index: 7;
+    opacity: 0.8;
+}
+
+.page-internal{
+  padding:70px;
+}
