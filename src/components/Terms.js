@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-export default class Subpage extends Component {
+
+
+export default class Terms extends Component {
   constructor(props) {
     super(props);
   }
@@ -12,11 +14,8 @@ export default class Subpage extends Component {
         onClick={this.props.active ? this.props.onClick : null}
       >
         <div className="page-internal">
-          <h1>Subpage</h1>
-          <p>Hello from a sub page!</p>
-          <Link to="/" className="link">
-            Click here to go to Home
-          </Link>
+          <h1>Terms</h1>
+          <p>Hello from the terms page!</p>
         </div>
       </div>
     );

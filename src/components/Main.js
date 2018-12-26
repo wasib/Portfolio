@@ -7,15 +7,20 @@ import {
 } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from "./Home";
-import Subpage from "./Subpage";
 import Nav from "./Nav";
-import Page3 from "./Page3";
+import Privacy from "./Privacy";
+import Contact from "./Contact";
+import Team from "./Team";
+import About from "./About";
+import Work from "./Work";
+import Pricing from "./Pricing";
+import Terms from "./Terms";
 import "../styles/Main.css";
 import "../styles/Menu.css";
 import "../styles/Pages.css";
 import "../styles/Nav.css";
 
-const routes = ["/", "/subpage", "/page3"];
+const routes = ["/", "/about", "/work", "/team", "/pricing", "/contact"];
 
 class Main extends React.Component {
   constructor() {
@@ -33,12 +38,12 @@ class Main extends React.Component {
 
   inactivePageClicked = () => {
     let i = routes.indexOf(this.props.location.pathname);
-    this.props.history.push(routes[++i%routes.length]);
+    this.props.history.push(routes[++i % routes.length]);
   };
 
   inactivePage2Clicked = () => {
     let i = routes.indexOf(this.props.location.pathname);
-    this.props.history.push(routes[(i+2)%routes.length]);
+    this.props.history.push(routes[(i + 2) % routes.length]);
   };
 
   componentDidUpdate(prevProps) {
@@ -118,9 +123,9 @@ class Main extends React.Component {
                           />
                           <Route
                             exact
-                            path="/subpage"
+                            path="/about"
                             render={props => (
-                              <Subpage
+                              <About
                                 {...props}
                                 active={this.state.active}
                                 onClick={this.menuClicked}
@@ -129,9 +134,64 @@ class Main extends React.Component {
                           />
                           <Route
                             exact
-                            path="/page3"
+                            path="/contact"
                             render={props => (
-                              <Page3
+                              <Contact
+                                {...props}
+                                active={this.state.active}
+                                onClick={this.menuClicked}
+                              />
+                            )}
+                          />
+                          <Route
+                            exact
+                            path="/work"
+                            render={props => (
+                              <Work
+                                {...props}
+                                active={this.state.active}
+                                onClick={this.menuClicked}
+                              />
+                            )}
+                          />
+                          <Route
+                            exact
+                            path="/team"
+                            render={props => (
+                              <Team
+                                {...props}
+                                active={this.state.active}
+                                onClick={this.menuClicked}
+                              />
+                            )}
+                          />
+                          <Route
+                            exact
+                            path="/pricing"
+                            render={props => (
+                              <Pricing
+                                {...props}
+                                active={this.state.active}
+                                onClick={this.menuClicked}
+                              />
+                            )}
+                          />
+                          <Route
+                            exact
+                            path="/privacy"
+                            render={props => (
+                              <Privacy
+                                {...props}
+                                active={this.state.active}
+                                onClick={this.menuClicked}
+                              />
+                            )}
+                          />
+                          <Route
+                            exact
+                            path="/terms"
+                            render={props => (
+                              <Terms
                                 {...props}
                                 active={this.state.active}
                                 onClick={this.menuClicked}

@@ -15,43 +15,43 @@ export default class Nav extends React.Component {
           </Link>
         </div>
         <div className="pages-nav__item">
-          <Link to="/subpage" className="link link--page">
-            Subpage
+          <Link to="/about" className="link link--page">
+            About
           </Link>
         </div>
         <div className="pages-nav__item">
-          <Link to="/page3" className="link link--page">
-            Page 3
+          <Link to="/work" className="link link--page">
+            Work
           </Link>
         </div>
         <div className="pages-nav__item">
-          <Link to="/" className="link link--page">
-            Home
+          <Link to="/team" className="link link--page">
+            Team
           </Link>
         </div>
         <div className="pages-nav__item">
-          <Link to="/subpage" className="link link--page">
-            Subpage
+          <Link to="/pricing" className="link link--page">
+            Pricing
           </Link>
         </div>
         <div className="pages-nav__item">
-          <Link to="/page3" className="link link--page">
-            Page 3
+          <Link to="/contact" className="link link--page">
+            Contact
+          </Link>
+        </div>
+        <div className="pages-nav__item pages-nav__item--small">
+          <Link to="/privacy" className="link link--page link--faded">
+            Privacy
+          </Link>
+        </div>
+        <div className="pages-nav__item pages-nav__item--small">
+          <Link to="/terms" className="link link--page link--faded">
+            Terms
           </Link>
         </div>
         <div className="pages-nav__item pages-nav__item--small">
           <Link to="/" className="link link--page link--faded">
-            Home
-          </Link>
-        </div>
-        <div className="pages-nav__item pages-nav__item--small">
-          <Link to="/subpage" className="link link--page link--faded">
-            Subpage
-          </Link>
-        </div>
-        <div className="pages-nav__item pages-nav__item--small">
-          <Link to="/page3" className="link link--page link--faded">
-            Page 3
+            Blog
           </Link>
         </div>
 

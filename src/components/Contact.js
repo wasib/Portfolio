@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-export default class Home extends Component {
+
+
+export default class Contact extends Component {
   constructor(props) {
     super(props);
   }
@@ -12,11 +14,8 @@ export default class Home extends Component {
         onClick={this.props.active ? this.props.onClick : null}
       >
         <div className="page-internal">
-          <h1>Home</h1>
-          <p>Hello from the home page!</p>
-          <Link to="/about" className="link">
-            Click here to go to About
-          </Link>
+          <h1>Contact</h1>
+          <p>Hello from the contact page!</p>
         </div>
       </div>
     );
