@@ -2,7 +2,7 @@ import React from "react";
 import Particles from "react-particles-js";
 import "../styles/Background.css";
 
-export default class Background extends React.Component {
+export default class Background extends React.PureComponent {
   render() {
     return (
       <div className="background-particles">
