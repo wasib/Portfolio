@@ -26,13 +26,20 @@ class Main extends React.Component {
   constructor() {
     super();
     this.state = {
-      active: false
+      active: false,
+      menuActive: true
     };
   }
 
   menuClicked = () => {
     this.setState({
       active: !this.state.active
+    });
+  };
+
+  toggleMenuActive = () => {
+    this.setState({
+      menuActive: !this.state.menuActive
     });
   };
 
@@ -50,7 +57,7 @@ class Main extends React.Component {
     if (this.props.location.pathname !== prevProps.location.pathname) {
       setTimeout(
         function() {
-          this.setState({ active: false });
+          this.setState({ active: false, menuActive: true });
         }.bind(this),
         150
       );
@@ -64,6 +71,7 @@ class Main extends React.Component {
           className={
             this.state.active ? "menu-button menu-button--open" : "menu-button"
           }
+          style={{ visibility: this.state.menuActive ? "visible" : "hidden" }}
           onClick={this.menuClicked}
         >
           <span>Menu</span>
@@ -151,6 +159,7 @@ class Main extends React.Component {
                                 {...props}
                                 active={this.state.active}
                                 onClick={this.menuClicked}
+                                toggleMenuActive={this.toggleMenuActive}
                               />
                             )}
                           />
