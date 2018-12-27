@@ -14,7 +14,7 @@ export default class Home extends Component {
       >
         <div className="page-internal">
         <Background/>
-          <h1>Home</h1>
+          <h1>Appening</h1>
           <p>Hello from the home page!</p>
           <Link to="/about" className="link">
             Click here to go to About

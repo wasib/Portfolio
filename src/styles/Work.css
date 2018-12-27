@@ -108,7 +108,7 @@
   z-index: 200;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0 7em;
+  padding: 0;
   text-align: center;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -155,9 +155,7 @@
 }
 
 .slider__nav {
-  position: absolute;
-  bottom: 2em;
-  width: 100%;
+  padding: 3em 0;
   text-align: center;
 }
 
@@ -399,12 +397,14 @@
 
 /* Media Queries */
 @media screen and (max-width: 50em) {
-    .content{
-        overflow-y: scroll;
-    }
+  .content {
+    overflow-y: scroll;
+  }
   .content__item {
     display: block;
-    overflow-y:scroll;
+  }
+  .content__item--current{
+      height: auto;
   }
   .content__item-img {
     max-width: calc(100% - 80px);
