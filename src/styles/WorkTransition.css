@@ -1,0 +1,102 @@
+/* enter */
+
+.left-enter .slide__mover {
+  transform: translate3d(-100%, 0%, 0px) !important;
+  opacity: 0;
+}
+
+.left-enter.left-enter-active .slide__mover {
+  opacity: 1;
+  transform: translate3d(0%, 0%, 0px) !important;
+  -webkit-transition: -webkit-transform 0.35s, opacity 0.35s;
+  transition: transform 0.35s, opacity 0.35s !important;
+  -webkit-transition-timing-function: cubic-bezier(0.13, 0.75, 0.58, 1.34);
+  transition-timing-function: cubic-bezier(0.13, 0.75, 0.58, 1.34) !important;
+}
+
+.right-enter .slide__mover {
+  transform: translate3d(100%, 0%, 0px) !important;
+  opacity: 0;
+}
+
+.right-enter.right-enter-active .slide__mover {
+  opacity: 1;
+  transform: translate3d(0%, 0%, 0px) !important;
+  -webkit-transition: -webkit-transform 0.35s, opacity 0.35s;
+  transition: transform 0.35s, opacity 0.35s !important;
+  -webkit-transition-timing-function: cubic-bezier(0.13, 0.75, 0.58, 1.34);
+  transition-timing-function: cubic-bezier(0.13, 0.75, 0.58, 1.34) !important;
+}
+
+.left-enter .slide__title {
+  transform: translate3d(-100%, 0%, 0px) !important;
+  opacity: 0;
+}
+
+.left-enter.left-enter-active .slide__title {
+  opacity: 1;
+  transform: translate3d(0%, 0%, 0px) !important;
+  -webkit-transition: -webkit-transform 0.35s ease-out, opacity 0.35s ease-out;
+  transition: transform 0.35s ease-out, opacity 0.35s ease-in !important;
+}
+
+.right-enter .slide__title {
+  transform: translate3d(100%, 0%, 0px) !important;
+  opacity: 0;
+}
+
+.right-enter.right-enter-active .slide__title {
+  opacity: 1;
+  transform: translate3d(0%, 0%, 0px) !important;
+  -webkit-transition: -webkit-transform 0.35s ease-out, opacity 0.35s ease-out;
+  transition: transform 0.35s ease-out, opacity 0.35s ease-in !important;
+}
+
+/* exit */
+
+.left-exit {
+  position: absolute !important;
+  opacity: 1;
+  width: 100%;
+  top: 0;
+  transform: translate3d(0%, 0%, 0px);
+}
+
+.left-exit.left-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s !important;
+  transition: opacity 0.35s !important;
+  -webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1) !important;
+}
+.right-exit {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  opacity: 1;
+  transform: translate3d(0%, 0%, 0px);
+}
+
+.right-exit.right-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s !important;
+  transition: opacity 0.35s !important;
+  -webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1) !important;
+}
+
+.left-enter .content {
+  visibility: hidden;
+}
+
+.right-enter .content {
+  visibility: hidden;
+}
+
+.left-exit .content {
+  visibility: hidden;
+}
+
+.right-exit .content {
+  visibility: hidden;
+}

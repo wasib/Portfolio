@@ -1,15 +1,18 @@
 import React, { Component } from "react";
-
+import { ProjectsData } from "../data/Projects";
 export default class Workindividual extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      data: ProjectsData[this.props.match.params.id]
+    };
   }
 
   render() {
     return (
       <div>
         <section className="slider">
-          <div className="slide slide--current" data-content="content-1">
+          <div className="slide slide--current">
             <div className="slide__mover">
               <div
                 className={
@@ -20,19 +23,19 @@ export default class Workindividual extends Component {
               >
                 <img
                   className="zoomer__image"
-                  src={require("../images/iphone.png")}
+                  src={require(`../images/${this.state.data.zoomerImage}`)}
                   alt="iPhone"
                 />
                 <div className="preview">
                   <img
-                    src={require("../images/iphone-content-preview.png")}
+                    src={require(`../images/${this.state.data.previewImage}`)}
                     alt="iPhone app preview"
                   />
                 </div>
               </div>
             </div>
             <h2 className="slide__title">
-              <span>The Classy</span> iPhone 6
+              <span>{this.state.data.platform}</span> {this.state.data.title}
             </h2>
           </div>
         </section>
@@ -50,30 +53,27 @@ export default class Workindividual extends Component {
           >
             <img
               className="content__item-img rounded-right"
-              src={require("../images/iphone-content.png")}
+              src={require(`../images/${this.state.data.contentImage}`)}
               alt="Apple Watch Content"
             />
             <div className="content__item-inner">
-              <h2>The iPhone 6</h2>
-              <h3>Incredible performance for powerful apps</h3>
-              <p>
-                Built on 64-bit desktop-class architecture, the new A8 chip
-                delivers more power, even while driving a larger display. The M8
-                motion coprocessor efficiently gathers data from advanced
-                sensors and a new barometer. And with increased battery life,
-                iPhone 6 lets you do more, for longer than ever.
-              </p>
+              <h2>{this.state.data.contentHeader}</h2>
+              <h3>{this.state.data.contentSubHeader}</h3>
+              <p>{this.state.data.contentSummary}</p>
               <p>
                 <a
                   className="link link--page link--faded"
-                  href="https://www.apple.com/iphone-6/technology/"
+                  href={this.state.data.projectLink}
                 >
                   Learn more about this technology ⟶
                 </a>
               </p>
             </div>
           </div>
-          <button className="button button--close" onClick={this.props.toggleZoom}>
+          <button
+            className="button button--close"
+            onClick={this.props.toggleZoom}
+          >
             x
             <i className="icon icon--circle-cross" />
             <span className="text-hidden">Close content</span>

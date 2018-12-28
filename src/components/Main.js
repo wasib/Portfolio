@@ -20,15 +20,20 @@ import "../styles/Menu.css";
 import "../styles/Pages.css";
 import "../styles/Nav.css";
 
-const routes = ["/", "/about", "/work", "/team", "/pricing", "/contact"];
+const routes = ["/", "/about", "/work/1", "/team", "/pricing", "/contact"];
 
 class Main extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       active: false,
       menuActive: true
     };
+  }
+
+  splitUrl(path) {
+    let arr = path.split("/");
+    return "/" + arr[1];
   }
 
   menuClicked = () => {
@@ -57,7 +62,11 @@ class Main extends React.Component {
     if (this.props.location.pathname !== prevProps.location.pathname) {
       setTimeout(
         function() {
-          this.setState({ active: false, menuActive: true });
+          this.setState({
+            active: false,
+            menuActive: true,
+            pathname: this.props.location
+          });
         }.bind(this),
         150
       );
@@ -103,7 +112,7 @@ class Main extends React.Component {
 
           <Route
             render={({ location }) => {
-              const { pathname } = location;
+              const pathname = this.splitUrl(location.pathname);
               return (
                 <TransitionGroup>
                   <CSSTransition
@@ -152,8 +161,7 @@ class Main extends React.Component {
                             )}
                           />
                           <Route
-                            exact
-                            path="/work"
+                            path="/work/:id"
                             render={props => (
                               <Work
                                 {...props}

@@ -20,7 +20,7 @@ export default class Nav extends React.Component {
           </Link>
         </div>
         <div className="pages-nav__item">
-          <Link to="/work" className="link link--page">
+          <Link to="/work/0" className="link link--page">
             Work
           </Link>
         </div>
