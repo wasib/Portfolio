@@ -74,8 +74,7 @@ export default class Workindividual extends Component {
             className="button button--close"
             onClick={this.props.toggleZoom}
           >
-            x
-            <i className="icon icon--circle-cross" />
+            <i className="icon icon--circle-cross fa fa-times-circle" />
             <span className="text-hidden">Close content</span>
           </button>
         </section>

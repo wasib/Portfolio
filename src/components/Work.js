@@ -86,13 +86,12 @@ export default class Work extends React.Component {
                 this.changeProject("left", `/work/${this.state.prev}`)
               }
             >
-              p
-              <i className="icon icon--arrow-left" />
+              <i className="icon icon--arrow-left fa fa-arrow-left" />
               <span className="text-hidden">Previous product</span>
             </button>
             <button className="button button--zoom" onClick={this.toggleZoom}>
-              z
-              <i className="icon icon--zoom" />
+              
+              <i className="icon icon--zoom fa fa-search" />
               <span className="text-hidden">View details</span>
             </button>
             <button
@@ -101,8 +100,7 @@ export default class Work extends React.Component {
                 this.changeProject("right", `/work/${this.state.next}`)
               }
             >
-              n
-              <i className="icon icon--arrow-right" />
+              <i className="icon icon--arrow-right fa fa-arrow-right" />
               <span className="text-hidden">Next product</span>
             </button>
           </nav>
