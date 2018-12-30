@@ -1,0 +1,150 @@
+
+
+.bg-11 {
+	background: inherit;
+}
+
+.pricing-section {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	position: relative;
+}
+
+.pricing-section__title {
+	font-size: 1.4em;
+	font-weight: 700;
+	margin: 3em 0 5em;
+	flex: none;
+}
+
+.pricing-section a {
+	color: #333;
+}
+
+.pricing-section a:hover, 
+.pricing-section a:focus {
+    color: #000;
+}
+
+
+/* Common styles */
+
+.pricing {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto 3em;
+}
+
+.pricing__item {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+	text-align: center;
+	-webkit-flex: 0 1 330px;
+	flex: 0 1 250px;
+}
+
+.pricing__feature-list {
+	text-align: left;
+}
+
+.pricing__action {
+	color: inherit;
+	border: none;
+	background: none;
+}
+
+.pricing__action:focus {
+	outline: none;
+}
+
+/* Tenzin */
+
+.pricing--tenzin .pricing__item {
+	margin: 1em;
+	padding: 2em 2.5em;
+	text-align: left;
+	color: #262b38;
+	background: #EEF0F3;
+	border-top: 3px solid #EEF0F3;
+	-webkit-transition: border-color 0.3s;
+	transition: border-color 0.3s;
+}
+
+.pricing--tenzin .pricing__item:hover {
+	border-color: #3e62e0;
+}
+
+.pricing--tenzin .pricing__title {
+	font-size: 1em;
+	margin: 0 0 1em;
+}
+
+.pricing--tenzin .pricing__price {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 0.5em 0 0.75em;
+	border-top: 3px solid rgba(139, 144, 157, 0.18);
+}
+
+.pricing--tenzin .pricing__currency {
+	font-size: 0.5em;
+	vertical-align: super;
+}
+
+.pricing--tenzin .pricing__sentence {
+	font-weight: bold;
+	padding: 0 0 0.5em;
+	color: #9CA0A9;
+	border-bottom: 3px solid rgba(139, 144, 157, 0.18);
+}
+
+.pricing--tenzin .pricing__feature-list {
+	font-size: 0.85em;
+	font-style: italic;
+	margin: 0;
+	padding: 0.25em 0 2.5em;
+	list-style: none;
+	text-align: right;
+	color: #8b909d;
+}
+
+.pricing--tenzin .pricing__action {
+	font-weight: bold;
+	margin-top: auto;
+	padding: 1em 2em;
+	color: #fff;
+	border-radius: 30px;
+	background: #3e62e0;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+}
+
+.pricing--tenzin .pricing__action:hover,
+.pricing--tenzin .pricing__action:focus {
+    background-color: #3b5ac5;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 50em) {
+    .pricing-container{
+        overflow: scroll;
+        height: 100%;
+    }
+}

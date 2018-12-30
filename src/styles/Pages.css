@@ -88,3 +88,10 @@
 .page-internal{
   padding:70px;
 }
+
+
+@media screen and (max-width: 40em) {
+	.page-internal{
+		padding:35px;
+	  }
+}
