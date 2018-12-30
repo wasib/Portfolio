@@ -26,7 +26,7 @@ export default class Workindividual extends Component {
                   src={require(`../images/${this.state.data.zoomerImage}`)}
                   alt="iPhone"
                 />
-                <div className="preview">
+                <div className="preview" onClick={this.props.toggleZoom}>
                   <img
                     src={require(`../images/${this.state.data.previewImage}`)}
                     alt="iPhone app preview"
