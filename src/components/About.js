@@ -16,7 +16,7 @@ export default class About extends Component {
         <div className="page-internal">
           <h1>About</h1>
           <p>Hello from the about page!</p>
-          <Link to="/" className="link">
+          <Link to="/" className="link link--faded">
             Click here to go to Home
           </Link>
         </div>

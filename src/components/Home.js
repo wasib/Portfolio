@@ -16,7 +16,7 @@ export default class Home extends Component {
         <Background/>
           <h1>Appening</h1>
           <p>Hello from the home page!</p>
-          <Link to="/about" className="link">
+          <Link to="/about" className="link link--faded">
             Click here to go to About
           </Link>
         </div>
