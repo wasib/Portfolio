@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 import Background from "./Background";
 import "../styles/Pricing.css";
 
@@ -19,6 +20,7 @@ export default class Pricing extends Component {
           <h1>Pricing</h1>
 
           <section className="pricing-section bg-11">
+          <Fade bottom cascade delay={100}>
             <div className="pricing pricing--tenzin">
               <div className="pricing__item">
                 <h3 className="pricing__title">Freelancer</h3>
@@ -73,7 +75,9 @@ export default class Pricing extends Component {
                 <button className="pricing__action">Choose plan</button>
               </div>
             </div>
+            </Fade>
           </section>
+
         </div>
       </div>
     );

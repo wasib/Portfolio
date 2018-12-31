@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 import "../styles/Contact.css";
 
 export default class Contact extends Component {
@@ -19,9 +20,13 @@ export default class Contact extends Component {
           <h1>Contact</h1>
 
           <div className="contact-info">
-            <div className="contact-phone">12345</div>
-            <div className="contact-mail">test@gmail.com</div>
-            <div className="contact-address">Hyderabad, India</div>
+            <Fade bottom delay={200}>
+              <div className="contact-phone">+91 9177896188</div>
+              <div className="contact-mail">test@gmail.com</div>
+            </Fade>
+            <Fade bottom delay={500}>
+              <div className="contact-address">Hyderabad, India</div>
+            </Fade>
           </div>
         </div>
       </div>
