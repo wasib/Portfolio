@@ -142,7 +142,7 @@
 }
 
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 65em) {
     .pricing-container{
         overflow: scroll;
         height: 100%;
