@@ -1,0 +1,131 @@
+.team-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:100px;
+}
+
+/* team individual stacks*/
+
+.stack {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  transform-style: preserve-3d;
+}
+
+.stack__deco {
+  transition: all 400ms ease-out;
+}
+.stack .stack__deco {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.stack__deco:first-child {
+  opacity: 0.2;
+}
+.stack__deco:nth-child(2) {
+  opacity: 0.4;
+}
+
+.stack__deco:nth-child(3) {
+  opacity: 0.6;
+}
+
+.stack__deco:nth-child(4) {
+  opacity: 0.8;
+}
+
+.stack .stack__figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.stack__figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-origin: 50% 100%;
+  transition: transform 400ms ease-out;
+}
+
+.stack__figure .stack__img {
+  transform: scale(1);
+  transition: all 400ms ease-out;
+}
+
+.stack:hover .stack__figure {
+  transform: translateY(-20px);
+}
+
+.stack:hover .stack__img {
+  transform: scale(0.7);
+}
+
+.stack:hover .stack__deco:nth-child(4) {
+  transform: translateY(-15px) rotate(2deg) scale(1.05);
+}
+
+.stack:hover .stack__deco:nth-child(3) {
+  transform: translateY(-10px) rotate(-3deg) scale(1.05);
+}
+.stack:hover .stack__deco:nth-child(2) {
+  transform: translateY(-5px) rotate(4deg) scale(1.05);
+}
+.stack:hover .stack__deco:first-child {
+  transform: translateY(0px) rotate(-5deg) scale(1.05);
+}
+
+.team-individual-content {
+  margin-top: 10px;
+}
+
+.team-individual-details {
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+  opacity: 0;
+}
+
+.stack:hover + .team-individual-content > .team-individual-details {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.one .stack__deco {
+  background-color: #52649e;
+}
+
+.two .stack__deco {
+  background-color: #ee7074;
+}
+
+.three .stack__deco {
+  background-color: #f7f295;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 50em) {
+    .team-container {
+        margin:0;
+    }
+
+    .team-page{
+        overflow: scroll;
+        height: 100%;
+    }
+
+}
