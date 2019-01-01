@@ -99,6 +99,10 @@
   opacity: 0;
 }
 
+.team-individual-details p{
+    margin:0;
+}
+
 .stack:hover + .team-individual-content > .team-individual-details {
   transform: translateY(0px);
   opacity: 1;

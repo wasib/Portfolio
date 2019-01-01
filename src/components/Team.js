@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Background from "./Background";
 import "../styles/Team.css";
 
 export default class Team extends Component {
@@ -14,6 +15,7 @@ export default class Team extends Component {
         onClick={this.props.active ? this.props.onClick : null}
       >
         <div className="page-internal team-page">
+          <Background />
           <h1>Team</h1>
 
           <div className="team-container">
@@ -32,7 +34,9 @@ export default class Team extends Component {
                 </div>
               </div>
               <div className="team-individual-content">
-                <div className="team-individual-name">Abcd</div>
+                <div className="team-individual-name">
+                  <h3>Sai Tej Dandge</h3>
+                </div>
                 <div className="team-individual-details">
                   <p>Information about that person here</p>
                   <p>probably a few lines</p>
@@ -55,7 +59,9 @@ export default class Team extends Component {
                 </div>
               </div>
               <div className="team-individual-content">
-                <div className="team-individual-name">Efgh</div>
+                <div className="team-individual-name">
+                  <h3>Mohammed Wasib</h3>
+                </div>
                 <div className="team-individual-details">
                   <p>Information about that person here</p>
                   <p>probably a few lines</p>
@@ -78,7 +84,9 @@ export default class Team extends Component {
                 </div>
               </div>
               <div className="team-individual-content">
-                <div className="team-individual-name">Jklm</div>
+                <div className="team-individual-name">
+                  <h3>Mohammed Aasif</h3>
+                </div>
                 <div className="team-individual-details">
                   <p>Information about that person here</p>
                   <p>probably a few lines</p>
