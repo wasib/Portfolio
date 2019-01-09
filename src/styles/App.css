@@ -9,13 +9,12 @@ body {
   padding: 0;
   font-family: "Avenir Next", Avenir, "Helvetica Neue", "Lato", "Segoe UI",
     Helvetica, Arial, sans-serif;
-  color: #cecece;
-  background: #121315;
+  color: #000;
+  background: linear-gradient(19deg, #21d4fd, #b721ff);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-*{
-    
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

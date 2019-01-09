@@ -60,6 +60,12 @@
 	transform: translate3d(0, 10px, 0) scale3d(0.8, 1, 1);
 }
 
+.menu-button--open::before,
+.menu-button--open::after,
+.menu-button--open span {
+	background: #fff;
+}
+
 .menu-button--open span {
 	opacity: 0;
 }
