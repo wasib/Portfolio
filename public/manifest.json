@@ -4,7 +4,7 @@
   "icons": [
     {
       "src": "testicon.png",
-      "sizes": "144x144 64x64 32x32 24x24 16x16",
+      "sizes": "198x198 144x144 64x64 32x32 24x24 16x16",
       "type": "image/png"
     }
   ],
