@@ -140,11 +140,3 @@
     background-color: #3b5ac5;
     cursor: pointer;
 }
-
-
-@media screen and (max-width: 65em) {
-    .pricing-container{
-        overflow: scroll;
-        height: 100%;
-    }
-}

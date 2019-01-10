@@ -73,12 +73,12 @@
 
 .link:hover,
 .link:focus {
-	color: #fff;
+	color: #170420;
 }
 
 .link--page {
 	display: block;
-	color: #cecece;
+	color: #fff;
 }
 
 .link--page:not(.link--faded)::before {
@@ -89,7 +89,7 @@
 	width: 30px;
 	height: 2px;
 	margin: 5px 0 0 -15px;
-	background: #fff;
+	background: #000;
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
 	-webkit-transform: scale3d(0, 1, 1);
@@ -102,12 +102,12 @@
 }
 
 .link--faded {
-	color: #4f4f64;
+	color: #170420;
 }
 
 .link--faded:hover,
 .link--faded:focus {
-	color: #5c5edc;
+	color: #fff;
 }
 
 .link--page.link--faded {

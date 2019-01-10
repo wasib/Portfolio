@@ -19,5 +19,6 @@ code {
 
 ::-webkit-scrollbar-track-piece{
 	background-color: transparent;
-	-webkit-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
 }

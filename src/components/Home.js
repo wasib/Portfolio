@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Background from "./Background";
 import HomeAnimation from "./HomeAnimation";
-import '../styles/Home.css'
+import "../styles/Home.css";
 export default class Home extends Component {
   constructor(props) {
     super(props);
