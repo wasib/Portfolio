@@ -1,17 +1,31 @@
-.home-animation{
-    position: absolute;
-    display: flex;
-    width:100%;
-    height:100%;
-    justify-content: flex-end;
-    align-items: center;
-    top:0;
-    left: 0;
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-right: 100px;
+  text-align: left;
+  max-width: 50%;
+}
+
+.home-image {
+    max-width: none;
+    white-space: normal;
+    text-align: right;
+}
+
+.home-image img {
+    max-width: 100%;
+}
 
 @media screen and (max-width: 50em) {
-    .home-animation{
-        display: none;
-    }
+  .home-container{
+    flex-flow: row wrap;
+  }
 }
