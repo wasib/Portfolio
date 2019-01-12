@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
 html,
 body,
 #root {
@@ -9,9 +9,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Avenir Next", Avenir, "Helvetica Neue", "Lato", "Segoe UI",
-    Helvetica, Arial, sans-serif;
-    font-family: 'EB Garamond', serif;
-    font-family: 'Cormorant Garamond', serif;
+    "Helvetica", "Arial", " sans-serif";
 
   color: #000;
   background: linear-gradient(19deg, #21d4fd, #b721ff);
