@@ -1,7 +1,7 @@
 .home-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .home-content {
@@ -23,7 +23,17 @@
 .home-image img {
     max-width: 100%;
 }
-
+.link-to-about
+{ 
+  padding: 10px;
+  text-align: center
+}
+.link-to-about:hover
+{
+  background: linear-gradient(19deg, #21d4fd, #b721ff);
+  padding: 10px;
+  text-align: center
+}
 @media screen and (max-width: 50em) {
   .home-container{
     flex-flow: row wrap;
