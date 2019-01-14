@@ -29,6 +29,11 @@ export default class About extends Component {
               </div>
             </div>
           </Fade>
+          <Fade bottom>
+            <div className="contact-button">
+              <Link to="/contact">CONTACT US</Link>
+            </div>
+          </Fade>
         </div>
       </div>
     );
