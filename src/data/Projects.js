@@ -4,7 +4,7 @@ export const ProjectsData = [
     title: "Name of the Project 1",
     platform: "Website",
     zoomerImage: "imac.png",
-    previewImage: "ornews-web-title.JPG",
+    previewImage: "imac-content-preview.jpg",
     contentImage: "imac-content.jpg",
     contentHeader: "Header for the Content 1",
     contentSubHeader: "Subheader for the content",

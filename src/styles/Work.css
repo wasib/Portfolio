@@ -1,4 +1,4 @@
-.work-individual-container{
+.work-individual-container {
   position: relative;
 }
 
@@ -243,6 +243,8 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .content__item--current {
@@ -408,8 +410,8 @@
   .content__item {
     display: block;
   }
-  .content__item--current{
-      height: auto;
+  .content__item--current {
+    height: auto;
   }
   .content__item-img {
     max-width: calc(100% - 80px);
