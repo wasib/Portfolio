@@ -19,20 +19,20 @@ export default class Home extends Component {
           <div className="home-container">
             <Fade left>
               <div className="home-content">
-                <h3>AS THE NAME SUGGESTS, WE MAKE APPS.</h3>
-                <h3>Web, Mobile and everything in between</h3>
-                <h3>
+                <p>AS THE NAME SUGGESTS, WE MAKE APPS.</p>
+                <p>Web, Mobile and everything in between</p>
+                <p>
                   We take your idea shape it and give it back to you in it's
                   finest form
-                </h3>
+                </p>
                 <Link to="/about" className="link link--faded">
-                  <h2 className="link-to-about">More About Us</h2>
+                  <h3 className="link-to-about">More About Us</h3>
                 </Link>
               </div>
             </Fade>
             <Fade right>
               <div className="home-image">
-                <img src={require("../images/home-image.svg")} />
+                <img src={require("../images/home/home-image.svg")} />
               </div>
             </Fade>
           </div>

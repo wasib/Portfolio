@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 .home-content {
@@ -16,33 +16,32 @@
 }
 
 .home-image {
-    max-width: none;
-    white-space: normal;
-    text-align: right;
+  max-width: none;
+  white-space: normal;
+  text-align: right;
 }
 
 .home-image img {
-    max-width: 100%;
+  max-width: 100%;
 }
-.link-to-about
-{ 
+.link-to-about {
   padding: 10px;
   text-align: center;
 }
-.link-to-about:hover
-{
+.link-to-about:hover {
   background: linear-gradient(19deg, #21d4fd, #b721ff);
   padding: 10px;
-  text-align: center
+  text-align: center;
 }
 
 
+
 @media screen and (max-width: 50em) {
-  .home-container{
+  .home-container {
     flex-flow: row wrap;
   }
-  .home-content{
-      margin-right:0px;
-      max-width:none;
+  .home-content {
+    margin-right: 0px;
+    max-width: none;
   }
 }
